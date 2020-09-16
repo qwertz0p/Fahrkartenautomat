@@ -40,30 +40,6 @@ namespace WPFFahrkartenautomat {
     /// </summary>
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
-        
-        #line 18 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Grid ABC;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 29 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label AB;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 36 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Grid BC;
-        
-        #line default
-        #line hidden
-        
         private bool _contentLoaded;
         
         /// <summary>
@@ -92,18 +68,6 @@ namespace WPFFahrkartenautomat {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
-            switch (connectionId)
-            {
-            case 1:
-            this.ABC = ((System.Windows.Controls.Grid)(target));
-            return;
-            case 2:
-            this.AB = ((System.Windows.Controls.Label)(target));
-            return;
-            case 3:
-            this.BC = ((System.Windows.Controls.Grid)(target));
-            return;
-            }
             this._contentLoaded = true;
         }
     }
