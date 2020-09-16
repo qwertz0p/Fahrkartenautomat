@@ -1,0 +1,15 @@
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\WPFFahrkartenautomat.csprojAssemblyReference.cache
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\MainWindow.g.cs
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\App.g.cs
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\WPFFahrkartenautomat_MarkupCompile.cache
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\WPFFahrkartenautomat_MarkupCompile.lref
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\bin\Debug\WPFFahrkartenautomat.exe.config
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\bin\Debug\WPFFahrkartenautomat.exe
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\bin\Debug\WPFFahrkartenautomat.pdb
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\MainWindow.baml
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\WPFFahrkartenautomat.g.resources
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\WPFFahrkartenautomat.Properties.Resources.resources
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\WPFFahrkartenautomat.csproj.GenerateResource.cache
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\WPFFahrkartenautomat.csproj.CoreCompileInputs.cache
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\WPFFahrkartenautomat.exe
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\WPFFahrkartenautomat.pdb
