@@ -6,50 +6,59 @@
         xmlns:local="clr-namespace:WPFFahrkartenautomat"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <StackPanel HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="540" UseLayoutRounding="True">
-            <TextBox Height="23" TextWrapping="Wrap" Text="Wählen Sie den gewünschten Fahrschein&#xD;&#xA;&#xD;&#xA;" FontFamily="Franklin Gothic Medium" FontSize="18" BorderBrush="{x:Null}"/>
-            <Border x:Name="Brd_ABC" BorderBrush="Black" BorderThickness="1" Height="100" Margin="0,10" CornerRadius="8">
-                <Grid Margin="0" RenderTransformOrigin="0.5,0.5">
+    <Grid Background="#FFD1CFCF">
+        <StackPanel Margin="20" UseLayoutRounding="True">
+            <TextBox Height="23" TextWrapping="Wrap" Text="Wählen Sie den gewünschten Fahrschein&#xD;&#xA;&#xD;&#xA;" FontFamily="Franklin Gothic Medium" FontSize="18" BorderBrush="{x:Null}" Background="{x:Null}"/>
+            <Border x:Name="Brd_ABC" BorderBrush="Black" BorderThickness="1" Height="100" Margin="0,10" CornerRadius="8" Background="#FFFDFDFD">
+                <Grid Margin="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
+                        <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Border HorizontalAlignment="Left" Margin="246,43,0,0" VerticalAlignment="Top" Width="107" Height="24" CornerRadius="8" BorderBrush="Black" BorderThickness="1" Background="#FFF5ED34" UseLayoutRounding="True" >
-                        <Button x:Name="Btn_ABC_SingleTicket" Content="Einzelfahrschein" Click="Button_Click" UseLayoutRounding="True" FontFamily="Franklin Gothic Medium" FontWeight="Bold" BorderBrush="{x:Null}" Padding="0" BorderThickness="0" Background="{x:Null}"/>
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Label Content="A" HorizontalAlignment="Left" Margin="0,29,0,0" VerticalAlignment="Top" OpacityMask="#FFE4DBDB" Foreground="White" FontSize="24" FontFamily="Franklin Gothic Medium" RenderTransformOrigin="0.5,0.5" BorderThickness="1" Background="#FFF58514" Padding="10,5" UseLayoutRounding="True"/>
+                            <Label Content="B" HorizontalAlignment="Left" Margin="41,29,0,0" VerticalAlignment="Top" OpacityMask="#FFE4DBDB" Foreground="White" FontSize="24" FontFamily="Franklin Gothic Medium" RenderTransformOrigin="0.5,0.5" BorderThickness="1" Background="#FF1466F5" Padding="10,5" UseLayoutRounding="True"/>
+                            <Label Content="C" HorizontalAlignment="Left" Margin="83,29,0,0" VerticalAlignment="Top" OpacityMask="#FFE4DBDB" Foreground="White" FontSize="24" FontFamily="Franklin Gothic Medium" RenderTransformOrigin="0.5,0.5" BorderThickness="1" Background="#FF63D873" Padding="10,5" UseLayoutRounding="True"/>
+                            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="2" Margin="0,13,0,0" Stroke="Black" VerticalAlignment="Top" Width="119"/>
+                            <Label Content="Berlin" HorizontalAlignment="Left" Margin="40,0,0,0" VerticalAlignment="Top" Background="White"/>
+                        </Grid>
+                        <Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="107" Height="24" CornerRadius="8" BorderBrush="Black" BorderThickness="1" Background="#FFF5ED34" UseLayoutRounding="True" Margin="0" Grid.Column="1" >
+                        <Button x:Name="Btn_ABC_SingleTicket" Content="Einzelfahrschein" Click="Button_Click" UseLayoutRounding="False" FontFamily="Franklin Gothic Medium" FontWeight="Bold" BorderBrush="{x:Null}" Padding="0" BorderThickness="0" Background="{x:Null}" HorizontalContentAlignment="Center"/>
                     </Border>
-                    <Grid x:Name="ABC" Margin="37,11,382,19">
-                        <Label Content="A" HorizontalAlignment="Left" Margin="0,29,0,0" VerticalAlignment="Top" OpacityMask="#FFE4DBDB" Foreground="White" FontSize="24" FontFamily="Franklin Gothic Medium" RenderTransformOrigin="0.5,0.5" BorderThickness="1" Background="#FFF58514" Padding="10,5" UseLayoutRounding="True"/>
-                        <Label Content="B" HorizontalAlignment="Left" Margin="41,29,0,0" VerticalAlignment="Top" OpacityMask="#FFE4DBDB" Foreground="White" FontSize="24" FontFamily="Franklin Gothic Medium" RenderTransformOrigin="0.5,0.5" BorderThickness="1" Background="#FF1466F5" Padding="10,5" UseLayoutRounding="True"/>
-                        <Label Content="C" HorizontalAlignment="Left" Margin="83,29,0,0" VerticalAlignment="Top" OpacityMask="#FFE4DBDB" Foreground="White" FontSize="24" FontFamily="Franklin Gothic Medium" RenderTransformOrigin="0.5,0.5" BorderThickness="1" Background="#FF63D873" Padding="10,5" UseLayoutRounding="True"/>
-                        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="2" Margin="0,13,0,0" Stroke="Black" VerticalAlignment="Top" Width="119"/>
-                        <Label Content="Berlin" HorizontalAlignment="Left" Margin="40,0,0,0" VerticalAlignment="Top" Background="White"/>
-                    </Grid>
                 </Grid>
             </Border>
-            <Border x:Name="Brd_AB" BorderBrush="Black" BorderThickness="1" Height="100" Margin="0,10" CornerRadius="8">
-                <Grid>
-                    <Grid Margin="37,11,382,19">
+            <Border x:Name="Brd_AB" BorderBrush="Black" BorderThickness="1" Height="100" Margin="0,10" CornerRadius="8" Background="White">
+                <Grid x:Name="SP_AB">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <Label x:Name="AB" Content="A" HorizontalAlignment="Left" Margin="0,29,0,0" VerticalAlignment="Top" OpacityMask="#FFE4DBDB" Foreground="White" FontSize="24" FontFamily="Franklin Gothic Medium" RenderTransformOrigin="0.5,0.5" BorderThickness="1" Background="#FFF58514" Padding="10,5" UseLayoutRounding="True"/>
                         <Label Content="B" HorizontalAlignment="Left" Margin="41,29,0,0" VerticalAlignment="Top" OpacityMask="#FFE4DBDB" Foreground="White" FontSize="24" FontFamily="Franklin Gothic Medium" RenderTransformOrigin="0.5,0.5" BorderThickness="1" Background="#FF1466F5" Padding="10,5" UseLayoutRounding="True"/>
                         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="2" Margin="0,13,0,0" Stroke="Black" VerticalAlignment="Top" Width="119"/>
                         <Label Content="Berlin" HorizontalAlignment="Left" Margin="40,0,0,0" VerticalAlignment="Top" Background="White"/>
                     </Grid>
-                    <Border HorizontalAlignment="Left" Margin="246,43,0,0" VerticalAlignment="Top" Width="107" Height="24" CornerRadius="8" BorderBrush="Black" BorderThickness="1" Background="#FFF5ED34" UseLayoutRounding="True" >
-                        <Button x:Name="Btn_AB_SingleTicket" Content="Einzelfahrschein" Click="Button_Click" UseLayoutRounding="True" FontFamily="Franklin Gothic Medium" FontWeight="Bold" BorderBrush="{x:Null}" Padding="0" BorderThickness="0" Background="{x:Null}"/>
+                    <Border HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="107" Height="24" CornerRadius="8" BorderBrush="Black" BorderThickness="1" Background="#FFF5ED34" UseLayoutRounding="True" Grid.Column="1" >
+                        <Button x:Name="Btn_AB_SingleTicket" Content="Einzelfahrschein" Click="Button_Click" UseLayoutRounding="False" FontFamily="Franklin Gothic Medium" FontWeight="Bold" BorderBrush="{x:Null}" Padding="0" BorderThickness="0" Background="{x:Null}"/>
                     </Border>
 
                 </Grid>
             </Border>
-            <Border x:Name="Brd_BC" BorderBrush="Black" BorderThickness="1" Height="100" Margin="0,10" CornerRadius="8">
+            <Border x:Name="Brd_BC" BorderBrush="Black" BorderThickness="1" Height="100" Margin="0,10" CornerRadius="8" Background="White">
                 <Grid>
-                    <Grid x:Name="BC" Margin="37,11,382,19">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid x:Name="BC" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <Label Content="B" HorizontalAlignment="Left" Margin="41,29,0,0" VerticalAlignment="Top" OpacityMask="#FFE4DBDB" Foreground="White" FontSize="24" FontFamily="Franklin Gothic Medium" RenderTransformOrigin="0.5,0.5" BorderThickness="1" Background="#FF1466F5" Padding="10,5" UseLayoutRounding="True"/>
                         <Label Content="C" HorizontalAlignment="Left" Margin="83,29,0,0" VerticalAlignment="Top" OpacityMask="#FFE4DBDB" Foreground="White" FontSize="24" FontFamily="Franklin Gothic Medium" RenderTransformOrigin="0.5,0.5" BorderThickness="1" Background="#FF63D873" Padding="10,5" UseLayoutRounding="True"/>
                         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="2" Margin="0,13,0,0" Stroke="Black" VerticalAlignment="Top" Width="119"/>
                         <Label Content="Berlin" HorizontalAlignment="Left" Margin="40,0,0,0" VerticalAlignment="Top" Background="White"/>
                     </Grid>
-                    <Border HorizontalAlignment="Left" Margin="246,43,0,0" VerticalAlignment="Top" Width="107" Height="24" CornerRadius="8" BorderBrush="Black" BorderThickness="1" Background="#FFF5ED34" UseLayoutRounding="True" >
-                        <Button x:Name="Btn_BC_SingleTicket" Content="Einzelfahrschein" Click="Button_Click" UseLayoutRounding="True" FontFamily="Franklin Gothic Medium" FontWeight="Bold" BorderBrush="{x:Null}" Padding="0" BorderThickness="0" Background="{x:Null}"/>
+                    <Border HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="107" Height="24" CornerRadius="8" BorderBrush="Black" BorderThickness="1" Background="#FFF5ED34" UseLayoutRounding="True" Grid.Column="1" >
+                        <Button x:Name="Btn_BC_SingleTicket" Content="Einzelfahrschein" Click="Button_Click" UseLayoutRounding="False" FontFamily="Franklin Gothic Medium" FontWeight="Bold" BorderBrush="{x:Null}" Padding="0" BorderThickness="0" Background="{x:Null}" ScrollViewer.CanContentScroll="True"/>
                     </Border>
                 </Grid>
             </Border>
