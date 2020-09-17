@@ -7,7 +7,18 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Ticketkauf">
-
+    <Page.Resources>
+        <ResourceDictionary>
+            <BitmapImage x:Key ="Cent10" UriSource="Pics/euro-muenzen-10-cent-2007-highResolution.jpg" />
+            <BitmapImage x:Key="Cent20" UriSource="Pics/euro-muenzen-20-cent-2007-highResolution.jpg" />
+            <BitmapImage x:Key="Cent50" UriSource="Pics/euro-muenzen-50-cent-2007-highResolution (1).jpg" />
+            <BitmapImage x:Key="Euro1" UriSource="Pics/euro-muenzen-1-euro-2007-highResolution.jpg" />
+            <BitmapImage x:Key="Euro2" UriSource="Pics/euro-muenzen-2-euro-2007-highResolution.jpg"/>
+            <BitmapImage x:Key="Euro5" UriSource="Pics/005-es1-v-data.jpg"/>
+            <BitmapImage x:Key="Euro10" UriSource="Pics/010-es1-v-data.jpg"/>
+            <BitmapImage x:Key="Euro20" UriSource="Pics/020-es1-v-data.jpg"/>
+        </ResourceDictionary>
+    </Page.Resources>
     <Grid>
         <Grid Height="440" Margin="10,0,0,0" Width="766">
             <Grid.RowDefinitions>
@@ -20,7 +31,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,0,0" Grid.ColumnSpan="2" CornerRadius="8" Background="White"/>
-            <Border HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Margin="0,20,0,0" Grid.Column="1" Grid.Row="1" Background="#FFFF5D5D" BorderBrush="Black" BorderThickness="1" CornerRadius="8" ScrollViewer.CanContentScroll="True" >
+            <Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Margin="0" Grid.Column="1" Grid.Row="1" Background="#FFFF5D5D" BorderBrush="Black" BorderThickness="1" CornerRadius="8" ScrollViewer.CanContentScroll="True" >
                 <Button Content="Abbrechen" Click="Cancel_Button_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="14"/>
             </Border>
             <Border Margin="0" Grid.Row="2" VerticalAlignment="Top" Grid.ColumnSpan="2" BorderThickness="1" CornerRadius="8" UseLayoutRounding="True" BorderBrush="Black" Background="White">
@@ -41,28 +52,28 @@
                     </Grid.ColumnDefinitions>
                     <Label Content="Geldeinwurf:" HorizontalAlignment="Left" />
                     <Button Name="Cent10" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1">
-                        <Image Source="euro-muenzen-10-cent-2007-highResolution.jpg"/>
+                        <Image Source="{StaticResource Cent10}"/>
                     </Button>
                     <Button Name="Cent20" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1">
-                        <Image Source="euro-muenzen-20-cent-2007-highResolution.jpg"/>
+                        <Image  Source="{StaticResource Cent20}" />
                     </Button>
                     <Button Name="Cent50" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2">
-                        <Image Source="euro-muenzen-50-cent-2007-highResolution (1).jpg"/>
+                            <Image  Source="{StaticResource Cent50}"/>
                     </Button>
                     <Button Name="Euro1" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3">
-                        <Image Source="euro-muenzen-1-euro-2007-highResolution.jpg"/>
+                        <Image  Source="{StaticResource Euro1}"/>
                     </Button>
                     <Button Name="Euro2" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Grid.Column="4">
-                        <Image Source="euro-muenzen-2-euro-2007-highResolution.jpg"/>
+                        <Image  Source="{StaticResource Euro2}"/>
                     </Button>
                     <Button Name="Euro5" HorizontalAlignment="Center" Margin="5,0" VerticalAlignment="Center" Grid.Row="1" Grid.Column="5">
-                        <Image Source="005-es1-v-data.jpg" Margin="0"/>
+                        <Image  Source="{StaticResource Euro5}"/>
                     </Button>
                     <Button Name="Euro10" HorizontalAlignment="Center" Margin="5,0" VerticalAlignment="Center" Grid.Row="1" Grid.Column="6">
-                        <Image Source="010-es1-v-data.jpg"/>
+                        <Image  Source="{StaticResource Euro10}"/>
                     </Button>
                     <Button Name="Euro20" HorizontalAlignment="Center" Margin="5,0" VerticalAlignment="Center" Grid.Row="1" Grid.Column="7">
-                        <Image Source="020-es1-v-data.jpg"/>
+                        <Image  Source="{StaticResource Euro20}"/>
                     </Button>
                 </Grid>
             </Border>

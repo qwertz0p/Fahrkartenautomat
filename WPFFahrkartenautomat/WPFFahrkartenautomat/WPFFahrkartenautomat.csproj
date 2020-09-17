@@ -100,6 +100,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\WPFFahrkartenautomat.exe.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -109,28 +110,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="euro-muenzen-10-cent-2007-highResolution.jpg" />
+    <Resource Include="Pics\005-es1-v-data.jpg" />
+    <Resource Include="Pics\010-es1-v-data.jpg" />
+    <Resource Include="Pics\020-es1-v-data.jpg" />
+    <Resource Include="Pics\euro-muenzen-1-euro-2007-highResolution.jpg" />
+    <Resource Include="Pics\euro-muenzen-10-cent-2007-highResolution.jpg" />
+    <Resource Include="Pics\euro-muenzen-2-euro-2007-highResolution.jpg" />
+    <Resource Include="Pics\euro-muenzen-20-cent-2007-highResolution.jpg" />
+    <Resource Include="Pics\euro-muenzen-50-cent-2007-highResolution %281%29.jpg" />
+    <Content Include="bin\Debug\WPFFahrkartenautomat.exe" />
+    <Content Include="bin\Debug\WPFFahrkartenautomat.pdb" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="euro-muenzen-20-cent-2007-highResolution.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="euro-muenzen-50-cent-2007-highResolution %281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="euro-muenzen-1-euro-2007-highResolution.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="euro-muenzen-2-euro-2007-highResolution.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="005-es1-v-data.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="010-es1-v-data.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="020-es1-v-data.jpg" />
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

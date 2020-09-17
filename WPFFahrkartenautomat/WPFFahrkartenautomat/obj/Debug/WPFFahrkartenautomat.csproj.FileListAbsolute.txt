@@ -17,3 +17,4 @@ D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\St
 D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\Ticketkauf.g.cs
 D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\Startseite.baml
 D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\Ticketkauf.baml
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\WPFFahrkartenautomat_Content.g.cs
