@@ -24,15 +24,51 @@ namespace WPFFahrkartenautomat
         {
             InitializeComponent();
         }
-
-        Ticket ABC = new Ticket(Areas.ABC, 3.60);
-        Ticket AB = new Ticket(Areas.AB, 2.90);
-        Ticket BC = new Ticket(Areas.BC, 3.30);
+        double geldeinwurf = 0;
 
         private void Cancel_Button_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Startseite());
         }
 
+        private void Cent10_Click(object sender, RoutedEventArgs e)
+        {
+            geldeinwurf += 0.1;
+        }
+
+        private void Cent20_Click(object sender, RoutedEventArgs e)
+        {
+            geldeinwurf += 0.2;
+        }
+
+        private void Cent50_Click(object sender, RoutedEventArgs e)
+        {
+            geldeinwurf += 0.5;
+        }
+
+        private void Euro1_Click(object sender, RoutedEventArgs e)
+        {
+            geldeinwurf += 1;
+        }
+
+        private void Euro2_Click(object sender, RoutedEventArgs e)
+        {
+            geldeinwurf += 2;
+        }
+
+        private void Euro5_Click(object sender, RoutedEventArgs e)
+        {
+            geldeinwurf += 5;
+        }
+
+        private void Euro10_Click(object sender, RoutedEventArgs e)
+        {
+            geldeinwurf += 10;
+        }
+
+        private void Euro20_Click(object sender, RoutedEventArgs e)
+        {
+            geldeinwurf += 20;
+        }
     }
 }
