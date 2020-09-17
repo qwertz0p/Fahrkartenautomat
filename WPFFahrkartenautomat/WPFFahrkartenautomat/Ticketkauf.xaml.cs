@@ -25,6 +25,10 @@ namespace WPFFahrkartenautomat
             InitializeComponent();
         }
 
+        Ticket ABC = new Ticket(Areas.ABC, 3.60);
+        Ticket AB = new Ticket(Areas.AB, 2.90);
+        Ticket BC = new Ticket(Areas.BC, 3.30);
+
         private void Cancel_Button_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Startseite());
