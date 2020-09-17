@@ -13,3 +13,7 @@ D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\WP
 D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\WPFFahrkartenautomat.csproj.CoreCompileInputs.cache
 D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\WPFFahrkartenautomat.exe
 D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\WPFFahrkartenautomat.pdb
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\Startseite.g.cs
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\Ticketkauf.g.cs
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\Startseite.baml
+D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\Ticketkauf.baml

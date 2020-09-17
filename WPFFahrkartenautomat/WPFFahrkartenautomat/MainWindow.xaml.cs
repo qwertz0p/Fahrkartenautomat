@@ -23,11 +23,14 @@ namespace WPFFahrkartenautomat
         public MainWindow()
         {
             InitializeComponent();
+
+            Loaded += Load_Startseite;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Load_Startseite(object sender, RoutedEventArgs e)
         {
-
+            frame.NavigationService.Navigate(new Startseite());
         }
+
     }
 }

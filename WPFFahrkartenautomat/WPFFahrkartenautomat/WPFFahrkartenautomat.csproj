@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Startseite.xaml.cs">
+      <DependentUpon>Startseite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ticketkauf.xaml.cs">
+      <DependentUpon>Ticketkauf.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +73,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Startseite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ticketkauf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -93,6 +107,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="euro-muenzen-10-cent-2007-highResolution.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="euro-muenzen-20-cent-2007-highResolution.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="euro-muenzen-50-cent-2007-highResolution %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="euro-muenzen-1-euro-2007-highResolution.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="euro-muenzen-2-euro-2007-highResolution.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="005-es1-v-data.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="010-es1-v-data.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="020-es1-v-data.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
