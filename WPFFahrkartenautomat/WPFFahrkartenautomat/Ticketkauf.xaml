@@ -20,8 +20,8 @@
             <BitmapImage x:Key="Euro20" UriSource="Pics/020-es1-v-data.jpg"/>
         </ResourceDictionary>
     </Page.Resources>
-    <Grid UseLayoutRounding="True">
-        <Grid Height="440" Margin="10,0,0,0" Width="766">
+    <Grid UseLayoutRounding="True" Margin="20">
+        <Grid Margin="10,0,0,0" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*"/>
                 <RowDefinition/>
@@ -36,9 +36,9 @@
                     <TextBox HorizontalAlignment="Left" Height="23" Margin="68,21,0,0" TextWrapping="Wrap" Text="Ausgewählter Tarif:" VerticalAlignment="Top" Width="120"/>
                     <TextBox HorizontalAlignment="Left" Height="23" Margin="68,78,0,0" TextWrapping="Wrap" Text="Berlin Tarifgebiet: " VerticalAlignment="Top" Width="120"/>
                     <TextBox HorizontalAlignment="Left" Height="23" Margin="375,78,0,0" TextWrapping="Wrap" Text="Einzelfahrschein" VerticalAlignment="Top" Width="120"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="225,78,0,0" TextWrapping="Wrap" Text="{Binding Path=Area}" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="68,168,0,0" TextWrapping="Wrap" Text="Preis:" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="375,168,0,0" TextWrapping="Wrap" Text="{Binding Path=PriceEuro}" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="225,78,0,0" TextWrapping="Wrap" Text="{Binding Path=Area}" VerticalAlignment="Top" Width="120" />
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="68,168,0,0" TextWrapping="Wrap" Text="Preis:" VerticalAlignment="Top" Width="120" />
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="375,168,0,0" TextWrapping="Wrap" Text="{Binding Path=PriceEuro}" VerticalAlignment="Top" Width="120" />
 
                 </Grid>
             </Border>
@@ -69,7 +69,7 @@
                         <Image  Source="{StaticResource Cent20}" />
                     </Button>
                     <Button Name="Cent50" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" Click="Cent50_Click">
-                            <Image  Source="{StaticResource Cent50}"/>
+                        <Image  Source="{StaticResource Cent50}"/>
                     </Button>
                     <Button Name="Euro1" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3" Click="Euro1_Click">
                         <Image  Source="{StaticResource Euro1}"/>
@@ -88,6 +88,7 @@
                     </Button>
                 </Grid>
             </Border>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="73,62,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path=ToPay, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="291"/>
         </Grid>
 
     </Grid>
