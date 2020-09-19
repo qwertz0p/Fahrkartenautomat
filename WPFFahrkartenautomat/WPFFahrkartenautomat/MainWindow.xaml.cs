@@ -26,9 +26,8 @@ namespace WPFFahrkartenautomat
 
             Loaded += Load_Startseite;
         }
-        Ticket ABC = new Ticket(Areas.ABC, 3.60);
-        Ticket AB = new Ticket(Areas.AB, 2.90);
-        Ticket BC = new Ticket(Areas.BC, 3.30);
+
+
         private void Load_Startseite(object sender, RoutedEventArgs e)
         {
             frame.NavigationService.Navigate(new Startseite());

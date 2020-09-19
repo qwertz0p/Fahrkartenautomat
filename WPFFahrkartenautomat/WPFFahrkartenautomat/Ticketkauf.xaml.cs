@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
+using System.Globalization;
 
 namespace WPFFahrkartenautomat
 {
@@ -20,11 +22,22 @@ namespace WPFFahrkartenautomat
     /// </summary>
     public partial class Ticketkauf : Page
     {
+        double geldeinwurf = 0;
+        public Ticket Selection = new Ticket();
+        CultureInfo culture = new CultureInfo("de-DE");
+
         public Ticketkauf()
         {
             InitializeComponent();
+            this.DataContext = Selection;
         }
-        double geldeinwurf = 0;
+
+        public Ticketkauf(Areas selarea, double selprice) : this()
+        {
+            Selection.Area = selarea;
+            Selection.Price = selprice;
+            Selection.PriceEuro = selprice.ToString("c", culture);
+        }
 
         private void Cancel_Button_Click(object sender, RoutedEventArgs e)
         {
@@ -69,6 +82,11 @@ namespace WPFFahrkartenautomat
         private void Euro20_Click(object sender, RoutedEventArgs e)
         {
             geldeinwurf += 20;
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

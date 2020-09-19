@@ -23,21 +23,22 @@ namespace WPFFahrkartenautomat
         public Startseite()
         {
             InitializeComponent();
-        }
-
+        }      
+        
+        
         private void ABC_Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Ticketkauf());
+            this.NavigationService.Navigate(new Ticketkauf(Areas.ABC, 3.60));
         }
 
         private void AB_Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Ticketkauf());
+            this.NavigationService.Navigate(new Ticketkauf(Areas.AB, 2.90));
         }
 
         private void BC_Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Ticketkauf());
+            this.NavigationService.Navigate(new Ticketkauf(Areas.BC, 3.30));
         }
     }
 }

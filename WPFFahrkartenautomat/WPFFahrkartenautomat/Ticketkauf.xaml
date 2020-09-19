@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:WPFFahrkartenautomat"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Ticketkauf">
+      Title="Ticketkauf"
+      TextOptions.TextFormattingMode="Display">
     <Page.Resources>
         <ResourceDictionary>
             <BitmapImage x:Key ="Cent10" UriSource="Pics/euro-muenzen-10-cent-2007-highResolution.jpg" />
@@ -19,7 +20,7 @@
             <BitmapImage x:Key="Euro20" UriSource="Pics/020-es1-v-data.jpg"/>
         </ResourceDictionary>
     </Page.Resources>
-    <Grid>
+    <Grid UseLayoutRounding="True">
         <Grid Height="440" Margin="10,0,0,0" Width="766">
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*"/>
@@ -32,8 +33,12 @@
             </Grid.ColumnDefinitions>
             <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,0,0" Grid.ColumnSpan="2" CornerRadius="8" Background="White">
                 <Grid>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="309,139,0,0" TextWrapping="Wrap" Text="Ausgewählter Tarif:" VerticalAlignment="Top" Width="120"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="376,167,0,0" TextWrapping="Wrap" Text="Berlin Tarifgebiet: " VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="68,21,0,0" TextWrapping="Wrap" Text="Ausgewählter Tarif:" VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="68,78,0,0" TextWrapping="Wrap" Text="Berlin Tarifgebiet: " VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="375,78,0,0" TextWrapping="Wrap" Text="Einzelfahrschein" VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="225,78,0,0" TextWrapping="Wrap" Text="{Binding Path=Area}" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="68,168,0,0" TextWrapping="Wrap" Text="Preis:" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="375,168,0,0" TextWrapping="Wrap" Text="{Binding Path=PriceEuro}" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
 
                 </Grid>
             </Border>

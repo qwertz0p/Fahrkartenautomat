@@ -6,9 +6,10 @@
       xmlns:local="clr-namespace:WPFFahrkartenautomat"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Startseite">
+      Title="Startseite"
+      TextOptions.TextFormattingMode="Display">
 
-    <Grid>
+    <Grid UseLayoutRounding="True">
         <StackPanel Margin="20" UseLayoutRounding="True">
             <TextBox Height="23" TextWrapping="Wrap" Text="Wählen Sie den gewünschten Fahrschein&#xD;&#xA;&#xD;&#xA;" FontFamily="Franklin Gothic Medium" FontSize="18" BorderBrush="{x:Null}" Background="{x:Null}"/>
             <Border x:Name="Brd_ABC" BorderBrush="Black" BorderThickness="1" Height="100" Margin="0,10" CornerRadius="8" Background="#FFFDFDFD">
