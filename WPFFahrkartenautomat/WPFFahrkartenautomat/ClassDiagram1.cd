@@ -3,15 +3,23 @@
   <Class Name="WPFFahrkartenautomat.Ticket">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAE=</HashCode>
+      <HashCode>AgAABAAAAwAAAQAgIAABAAAAhAAAAAAAAAAAAQAAAAE=</HashCode>
       <FileName>Ticket.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Enum Name="WPFFahrkartenautomat.Areas">
     <Position X="2.75" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>Areas.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WPFFahrkartenautomat.Geldwerte">
+    <Position X="2.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAACAAAAAAAEAACAAAAAIABAAA=</HashCode>
+      <FileName>Geldwerte.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />
