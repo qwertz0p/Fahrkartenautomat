@@ -36,7 +36,6 @@ namespace WPFFahrkartenautomat
         {
             Selection.Area = selarea;
             Selection.Price = selprice;
-            Debug.WriteLine(Selection.ToPay);
         }
 
         private void Cancel_Button_Click(object sender, RoutedEventArgs e)
@@ -44,12 +43,12 @@ namespace WPFFahrkartenautomat
             this.NavigationService.Navigate(new Startseite());
         }
 
+
+        //Hier wiederholt sich Code!! Es muss also umdesignt werden :-)
         private void Cent10_Click(object sender, RoutedEventArgs e)
         {
             geldeinwurf += 0.1;
             Selection.TicketBezahlen(geldeinwurf);
-            Debug.WriteLine(Selection.ToPay);
-
         }
 
         private void Cent20_Click(object sender, RoutedEventArgs e)

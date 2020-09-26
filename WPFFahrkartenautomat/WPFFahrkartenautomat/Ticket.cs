@@ -35,7 +35,6 @@ namespace WPFFahrkartenautomat
                 _price = value;
                 this.PriceEuro = _price.ToString("c", culture);
                 this.ToPay = "Zu zahlen:\t\t" + this.PriceEuro;
-
             }
         }
 
