@@ -65,11 +65,11 @@
                 </Grid.ColumnDefinitions>
                 <TextBox Height="22" Margin="0,30" TextWrapping="Wrap" Text="{Binding Path=Topay, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" FontFamily="Franklin Gothic Medium" FontSize="18" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Center" Width="268" Grid.Column="1" HorizontalAlignment="Left"/>
                 <DockPanel Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Border HorizontalAlignment="Left" VerticalAlignment="Center" Width="75" Margin="0,0,20,0" Background="#FF63D873" BorderBrush="Black" BorderThickness="1" CornerRadius="8" ScrollViewer.CanContentScroll="True" Grid.Column="2" >
+                    <Border x:Name="Brd_Mehr" HorizontalAlignment="Left" VerticalAlignment="Center" Width="75" Margin="0,0,20,0" Background="#FF63D873" BorderBrush="Black" BorderThickness="1" CornerRadius="8" ScrollViewer.CanContentScroll="True" Grid.Column="2" >
                         <Button x:Name="Mehr" Content="+Ticket" Click="Amount_Button_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="14"/>
                     </Border>
-                    <Border HorizontalAlignment="Right" VerticalAlignment="Center" Width="75" Margin="0" Background="#FF63D873" BorderBrush="Black" BorderThickness="1" CornerRadius="8" ScrollViewer.CanContentScroll="True" Grid.Column="2" >
-                        <Button x:Name="Weniger" Content="-Ticket" Click="Amount_Button_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="14"/>
+                    <Border x:Name="Brd_Weniger" HorizontalAlignment="Right" VerticalAlignment="Center" Width="75" Margin="0" Background="#FF63D873" BorderBrush="Black" BorderThickness="0" CornerRadius="8" ScrollViewer.CanContentScroll="True" Grid.Column="2" >
+                        <Button x:Name="Weniger" Content="-Ticket" Click="Amount_Button_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="14" Visibility="Collapsed"/>
                     </Border>
                 </DockPanel>
                 <Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Margin="0" Background="#FFFF5D5D" BorderBrush="Black" BorderThickness="1" CornerRadius="8" ScrollViewer.CanContentScroll="True" Grid.Column="3" >

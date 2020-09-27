@@ -93,6 +93,21 @@ namespace WPFFahrkartenautomat
                     Actual.Amount -= 1;
                     break;
             }
+
+            if(Actual.Amount > 1)
+            {
+                ThicknessConverter thkcon = new ThicknessConverter();
+                Thickness th1 = (Thickness)thkcon.ConvertFromString("1");
+                Weniger.Visibility = Visibility.Visible;
+                Brd_Weniger.BorderThickness = th1;
+            }
+            else
+            {
+                ThicknessConverter thkcon = new ThicknessConverter();
+                Thickness th0= (Thickness)thkcon.ConvertFromString("0");
+                Weniger.Visibility = Visibility.Collapsed;
+                Brd_Weniger.BorderThickness = th0;
+            }
         }
     }
 }
