@@ -1,21 +1,20 @@
 # Fahrkartenautomat
 
 ## Anforderungen:
-- [ ] Abgabe per Repository
-- [ ] Saubere Trennung zwischen GUI & Logik
-- [ ] Umsetzung einer ansprechenden GUI
-- [ ] Bezahlung mit Münzen
-- [ ] Bezahlung mit Scheinen
+- [x] Abgabe per Repository
+- [x] Saubere Trennung zwischen GUI & Logik
+- [x] Umsetzung einer ansprechenden GUI
+- [x] Bezahlung mit Münzen
+- [x] Bezahlung mit Scheinen
 - [ ] Erhalt von Wechselgeld
-- [ ] Auswahl der Berlin Einzeltickets
-- [ ] Kauf mehrerer Fahrscheine
+- [x] Auswahl der Berlin Einzeltickets
+- [x] Kauf mehrerer Fahrscheine
 
 ## MyTasks - Löschen wenn fertig!!!
 - Wenn genug Geld eingeworfen wird Ticketkauf beendet
 - Wechselgeld in Euro-Währungseinheiten umrechnen
 - Wechselgeld Ausgabe
 - Ticket Ausgabe
-- Mehrere Tickets kaufen können
 - FensterIcon anpassen
 - Button Template
 - Inserted Coins implementieren

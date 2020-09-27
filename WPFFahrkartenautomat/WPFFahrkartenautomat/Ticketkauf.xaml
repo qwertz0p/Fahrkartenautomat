@@ -93,28 +93,28 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Geldeinwurf:" HorizontalAlignment="Left" />
-                    <Button Name="Cent10" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Click="Cent10_Click">
+                    <Button Name="Cent10" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Click="Einwerfen_Click">
                         <Image Source="{StaticResource Cent10}"/>
                     </Button>
-                    <Button Name="Cent20" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Click="Cent20_Click">
+                    <Button Name="Cent20" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Click="Einwerfen_Click">
                         <Image  Source="{StaticResource Cent20}" />
                     </Button>
-                    <Button Name="Cent50" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" Click="Cent50_Click">
+                    <Button Name="Cent50" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" Click="Einwerfen_Click">
                         <Image  Source="{StaticResource Cent50}"/>
                     </Button>
-                    <Button Name="Euro1" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3" Click="Euro1_Click">
+                    <Button Name="Euro1" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3" Click="Einwerfen_Click">
                         <Image  Source="{StaticResource Euro1}"/>
                     </Button>
-                    <Button Name="Euro2" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Grid.Column="4" Click="Euro2_Click">
+                    <Button Name="Euro2" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Grid.Column="4" Click="Einwerfen_Click">
                         <Image  Source="{StaticResource Euro2}"/>
                     </Button>
-                    <Button Name="Euro5" HorizontalAlignment="Center" Margin="5,0" VerticalAlignment="Center" Grid.Row="1" Grid.Column="5" Click="Euro5_Click">
+                    <Button Name="Euro5" HorizontalAlignment="Center" Margin="5,0" VerticalAlignment="Center" Grid.Row="1" Grid.Column="5" Click="Einwerfen_Click">
                         <Image  Source="{StaticResource Euro5}"/>
                     </Button>
-                    <Button Name="Euro10" HorizontalAlignment="Center" Margin="5,0" VerticalAlignment="Center" Grid.Row="1" Grid.Column="6" Click="Euro10_Click">
+                    <Button Name="Euro10" HorizontalAlignment="Center" Margin="5,0" VerticalAlignment="Center" Grid.Row="1" Grid.Column="6" Click="Einwerfen_Click">
                         <Image  Source="{StaticResource Euro10}"/>
                     </Button>
-                    <Button Name="Euro20" HorizontalAlignment="Center" Margin="5,0" VerticalAlignment="Center" Grid.Row="1" Grid.Column="7" Click="Euro20_Click">
+                    <Button Name="Euro20" HorizontalAlignment="Center" Margin="5,0" VerticalAlignment="Center" Grid.Row="1" Grid.Column="7" Click="Einwerfen_Click">
                         <Image  Source="{StaticResource Euro20}"/>
                     </Button>
                 </Grid>
