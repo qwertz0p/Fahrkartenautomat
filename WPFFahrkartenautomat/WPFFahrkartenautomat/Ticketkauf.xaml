@@ -26,6 +26,7 @@
                 <RowDefinition Height="2*"/>
                 <RowDefinition/>
                 <RowDefinition/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -55,10 +56,27 @@
                     <TextBox HorizontalAlignment="Left" Height="23" Margin="0" TextWrapping="Wrap" Text="{Binding Path=Priceshow}" FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Center" Width="120" Grid.Row="3" Grid.Column="2" />
                 </Grid>
             </Border>
-            <Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Margin="0" Grid.Column="1" Grid.Row="1" Background="#FFFF5D5D" BorderBrush="Black" BorderThickness="1" CornerRadius="8" ScrollViewer.CanContentScroll="True" >
-                <Button Content="Abbrechen" Click="Cancel_Button_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="14"/>
-            </Border>
-            <Border Margin="0" Grid.Row="2" VerticalAlignment="Top" Grid.ColumnSpan="2" BorderThickness="1" CornerRadius="8" UseLayoutRounding="True" BorderBrush="Black" Background="White">
+            <Grid Grid.Row="1" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Height="22" Margin="0,30" TextWrapping="Wrap" Text="{Binding Path=Topay, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" FontFamily="Franklin Gothic Medium" FontSize="18" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Center" Width="268" Grid.Column="1" HorizontalAlignment="Left"/>
+                <DockPanel Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Border HorizontalAlignment="Left" VerticalAlignment="Center" Width="75" Margin="0,0,20,0" Background="#FF63D873" BorderBrush="Black" BorderThickness="1" CornerRadius="8" ScrollViewer.CanContentScroll="True" Grid.Column="2" >
+                        <Button x:Name="Mehr" Content="+Ticket" Click="Amount_Button_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="14"/>
+                    </Border>
+                    <Border HorizontalAlignment="Right" VerticalAlignment="Center" Width="75" Margin="0" Background="#FF63D873" BorderBrush="Black" BorderThickness="1" CornerRadius="8" ScrollViewer.CanContentScroll="True" Grid.Column="2" >
+                        <Button x:Name="Weniger" Content="-Ticket" Click="Amount_Button_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="14"/>
+                    </Border>
+                </DockPanel>
+                <Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Margin="0" Background="#FFFF5D5D" BorderBrush="Black" BorderThickness="1" CornerRadius="8" ScrollViewer.CanContentScroll="True" Grid.Column="3" >
+                    <Button Content="Abbrechen" Click="Cancel_Button_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="14"/>
+                </Border>
+            </Grid>
+            <Border Margin="0" Grid.Row="2" VerticalAlignment="Center" Grid.ColumnSpan="2" BorderThickness="1" CornerRadius="8" UseLayoutRounding="True" BorderBrush="Black" Background="White">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
@@ -101,7 +119,9 @@
                     </Button>
                 </Grid>
             </Border>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="73,62,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path=Topay, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" FontFamily="Franklin Gothic Medium" FontSize="18" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Width="291"/>
+            <Border Margin="0" Grid.Row="3" VerticalAlignment="Center" Grid.ColumnSpan="2" BorderThickness="1" CornerRadius="8" UseLayoutRounding="True" BorderBrush="Black" Background="White">
+                <Label Content="Ausgabeschacht:" HorizontalAlignment="Left" />
+            </Border>
         </Grid>
 
     </Grid>

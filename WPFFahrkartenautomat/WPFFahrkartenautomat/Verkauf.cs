@@ -20,8 +20,8 @@ namespace WPFFahrkartenautomat
                 PropertyChanged(this, e);
         }
 
-        public string notpaid = "Zu zahlen:";
-        public string paid = "Wechselgeld: ";
+        public string notpaid = "Zu zahlen:\t";
+        public string paid = "Wechselgeld:\t";
 
 
 
@@ -46,9 +46,9 @@ namespace WPFFahrkartenautomat
                 _moneyin += value;
                 OnPropertyChanged(new PropertyChangedEventArgs("Moneyin"));
 
-                // Auto: Aktualisierung des noch zu zahlenden Betrags
-                double temp = (double)((Amount * Ticket.Price) - _moneyin) / 100;
-                Topay = temp.ToString("c", culture);
+                // Autoaktualisierung von Topay und Priceshow
+                this.AktualisierenWerte();
+    
             }
         }
 
@@ -82,9 +82,8 @@ namespace WPFFahrkartenautomat
                 _amount = value;
                 OnPropertyChanged(new PropertyChangedEventArgs("Amount"));
 
-                // Auto: Aktualisierung des Betrags der kompletten Ware
-                double temp = (double)(this.Amount * this.Ticket.Price)/ 100;
-                this.Priceshow = temp.ToString("c", culture);
+                // Autoaktualisierung von Topay und Priceshow
+                this.AktualisierenWerte();
             }
         }
 
@@ -123,19 +122,27 @@ namespace WPFFahrkartenautomat
         #region Methoden
         public void Bezahlen()
         {
-            //double diff;
-            //string output;
-            //diff = this.Price - input;
-            //output = diff.ToString("c", culture);
 
-            //if (diff > 0)
-            //{
-            //    this.ToPay = output.Insert(0, "Zu zahlen: \t\t");
-            //}
-            //else
-            //{
-            //    this.ToPay = output.Insert(0, "Wechselgeld: \t\t");
-            //}
+        }
+
+        public void AktualisierenWerte()
+        {
+            // Aktualisierung: Noch zu Bezahlen
+            double tempTopay = (double)((Amount * Ticket.Price) - Moneyin) / 100;
+            if (tempTopay > 0)
+            {
+                Topay = notpaid + tempTopay.ToString("c", culture);
+            }
+            else
+            {
+                Topay = paid + tempTopay.ToString("c", culture);
+            }
+
+            // Aktualisierung: Des zu zahlenden Gesamtpreises
+            double tempPrice = (double)(this.Amount * this.Ticket.Price) / 100;
+            this.Priceshow = tempPrice.ToString("c", culture);
+
+
         }
 
         public void AusgebenWechselgeld()

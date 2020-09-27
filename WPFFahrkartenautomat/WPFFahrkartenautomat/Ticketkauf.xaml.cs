@@ -78,5 +78,21 @@ namespace WPFFahrkartenautomat
         }
 
         #endregion
+
+        private void Amount_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+            string amchange = btn.Name;
+
+            switch (amchange)
+            {
+                case "Mehr":
+                    Actual.Amount += 1;
+                    break;
+                case "Weniger":
+                    Actual.Amount -= 1;
+                    break;
+            }
+        }
     }
 }
