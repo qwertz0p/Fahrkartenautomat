@@ -36,9 +36,9 @@
                     <TextBox HorizontalAlignment="Left" Height="23" Margin="68,21,0,0" TextWrapping="Wrap" Text="Ausgewählter Tarif:" FontFamily="Franklin Gothic Medium"  FontSize="18" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Width="190"/>
                     <TextBox HorizontalAlignment="Left" Height="23" Margin="68,78,0,0" TextWrapping="Wrap" Text="Berlin Tarifgebiet: " FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Top" Width="152"/>
                     <TextBox HorizontalAlignment="Left" Height="23" Margin="375,78,0,0" TextWrapping="Wrap" Text="Einzelfahrschein" FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}"  VerticalAlignment="Top" Width="159"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="225,78,0,0" TextWrapping="Wrap" Text="{Binding Path=Area}" FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Top" Width="120" />
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="225,78,0,0" TextWrapping="Wrap" Text="{Binding Path=Ticket.Area, Mode=OneWay}" FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Top" Width="120" />
                     <TextBox HorizontalAlignment="Left" Height="23" Margin="68,168,0,0" TextWrapping="Wrap" Text="Preis:"  FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Top" Width="120" />
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="375,168,0,0" TextWrapping="Wrap" Text="{Binding Path=PriceEuro}" FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Top" Width="120" />
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="375,168,0,0" TextWrapping="Wrap" Text="{Binding Path=Priceshow}" FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Top" Width="120" />
 
                 </Grid>
             </Border>
@@ -88,7 +88,7 @@
                     </Button>
                 </Grid>
             </Border>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="73,62,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path=ToPay, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" FontFamily="Franklin Gothic Medium" FontSize="18" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Width="291"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="73,62,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path=Topay, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" FontFamily="Franklin Gothic Medium" FontSize="18" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Width="291"/>
         </Grid>
 
     </Grid>

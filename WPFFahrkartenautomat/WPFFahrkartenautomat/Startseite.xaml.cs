@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,25 +21,35 @@ namespace WPFFahrkartenautomat
     /// </summary>
     public partial class Startseite : Page
     {
+
+
         public Startseite()
         {
             InitializeComponent();
         }      
         
         
-        private void ABC_Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Ticketkauf(Areas.ABC, 3.60));
-        }
+            Button btn = (Button)sender;
+            string selticket = btn.Name;
 
-        private void AB_Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new Ticketkauf(Areas.AB, 2.90));
-        }
+            Ticket Selticket = new Ticket();
 
-        private void BC_Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new Ticketkauf(Areas.BC, 3.30));
+            switch (selticket)
+            {
+                case "ABC":
+                    Selticket.Area = Areas2Price.ABC;
+                    break;
+                case "AB":
+                    Selticket.Area = Areas2Price.AB;
+                    break;
+                case "BC":
+                    Selticket.Area = Areas2Price.BC;
+                    break;
+            }
+
+            this.NavigationService.Navigate(new Ticketkauf(Selticket));
         }
     }
 }

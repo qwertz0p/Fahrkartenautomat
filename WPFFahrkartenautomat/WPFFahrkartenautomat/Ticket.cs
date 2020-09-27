@@ -15,13 +15,26 @@ namespace WPFFahrkartenautomat
     public class Ticket
     {
         #region Felder
-        private double _price;
-        private Areas _area;
+        private int _price;
+        private Areas2Price _area;
         #endregion
-        
+
         #region Properties
+
+        // Berliner Areal
+        public Areas2Price Area
+        {
+            get => _area;
+            set
+            {
+                _area = value;
+
+                // Automatische Anpassung des Preises bei Zuweisung des Areals
+                this.Price = (int)_area;
+            }
+        }
         // Basispreis des Tickets
-        public double Price
+        public int Price
         {
             get => _price;
             set
@@ -31,15 +44,6 @@ namespace WPFFahrkartenautomat
             }
         }
 
-        // Berliner Areal
-        public Areas Area
-        {
-            get => _area;
-            set
-            {
-                _area = value;
-            }
-        }
 
         #endregion
 
@@ -47,17 +51,18 @@ namespace WPFFahrkartenautomat
 
         public Ticket() { }
 
-        public Ticket(Areas ticketarea, double ticketprice)
+        public Ticket(Areas2Price ticketarea)
         {
             this.Area = ticketarea;
-            this.Price = ticketprice;
         }
         #endregion Konstruktoren
 
+        #region Methoden
         public void Print()
         {
             throw new System.NotImplementedException();
         }
+        #endregion
 
 
     }

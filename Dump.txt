@@ -1,0 +1,9 @@
+        public Verkauf(Ticket ticket)
+        {
+            this.Amount = 1;
+            this.Ticket = ticket;
+            this.Priceshow = ticket.Price.ToString("c", culture);
+            this.Moneyin = 0;
+            this.Topay = ticket.Price.ToString("c", culture);
+
+        }

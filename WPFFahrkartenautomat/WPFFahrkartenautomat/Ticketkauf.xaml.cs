@@ -22,20 +22,18 @@ namespace WPFFahrkartenautomat
     /// </summary>
     public partial class Ticketkauf : Page
     {
-        double geldeinwurf = 0;
-        public Ticket Selection = new Ticket();
+        public Verkauf Actual = new Verkauf();
 
 
         public Ticketkauf()
         {
             InitializeComponent();
-            this.DataContext = Selection;
+            this.DataContext = Actual;
         }
 
-        public Ticketkauf(Areas selarea, double selprice) : this()
+        public Ticketkauf(Ticket selticket) : this()
         {
-            Selection.Area = selarea;
-            Selection.Price = selprice;
+            Actual.Ticket = selticket;
         }
 
         private void Cancel_Button_Click(object sender, RoutedEventArgs e)
@@ -49,50 +47,34 @@ namespace WPFFahrkartenautomat
         #region Geldeinwurf
         private void Cent10_Click(object sender, RoutedEventArgs e)
         {
-            geldeinwurf += 0.1;
-            Selection.TicketBezahlen(geldeinwurf);
         }
 
         private void Cent20_Click(object sender, RoutedEventArgs e)
         {
-            geldeinwurf += 0.2;
-            Selection.TicketBezahlen(geldeinwurf);
         }
 
         private void Cent50_Click(object sender, RoutedEventArgs e)
         {
-            geldeinwurf += 0.5;
-            Selection.TicketBezahlen(geldeinwurf);
         }
 
         private void Euro1_Click(object sender, RoutedEventArgs e)
         {
-            geldeinwurf += 1;
-            Selection.TicketBezahlen(geldeinwurf);
         }
 
         private void Euro2_Click(object sender, RoutedEventArgs e)
         {
-            geldeinwurf += 2;
-            Selection.TicketBezahlen(geldeinwurf);
         }
 
         private void Euro5_Click(object sender, RoutedEventArgs e)
         {
-            geldeinwurf += 5;
-            Selection.TicketBezahlen(geldeinwurf);
         }
 
         private void Euro10_Click(object sender, RoutedEventArgs e)
         {
-            geldeinwurf += 10;
-            Selection.TicketBezahlen(geldeinwurf);
         }
 
         private void Euro20_Click(object sender, RoutedEventArgs e)
         {
-            geldeinwurf += 20;
-            Selection.TicketBezahlen(geldeinwurf);
         }
 
         #endregion
