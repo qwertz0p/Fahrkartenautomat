@@ -45,6 +45,8 @@ namespace WPFFahrkartenautomat
 
 
         //Hier wiederholt sich Code!! Es muss also umdesignt werden :-)
+
+        #region Geldeinwurf
         private void Cent10_Click(object sender, RoutedEventArgs e)
         {
             geldeinwurf += 0.1;
@@ -93,5 +95,6 @@ namespace WPFFahrkartenautomat
             Selection.TicketBezahlen(geldeinwurf);
         }
 
+        #endregion
     }
 }

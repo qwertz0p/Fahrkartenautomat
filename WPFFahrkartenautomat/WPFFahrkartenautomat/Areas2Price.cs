@@ -5,11 +5,11 @@ using System.Text;
 
 namespace WPFFahrkartenautomat
 {
-    //Einteilung der Areale Berlins entsprechend BVG
-    public enum Areas
+    //Preismatrix für Berliner Areale (in Cent)
+    public enum Areas2Price
     {
-        ABC,
-        AB,
-        BC
+        ABC = 360,
+        AB = 290,
+        BC = 330
     }
 }

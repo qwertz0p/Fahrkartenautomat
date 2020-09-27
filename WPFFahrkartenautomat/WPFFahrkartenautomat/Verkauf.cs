@@ -37,6 +37,8 @@ namespace WPFFahrkartenautomat
             get => default;
             set
             {
+                this.PriceEuro = _price.ToString("c", culture);
+                this.ToPay = "Zu zahlen:\t\t" + this.PriceEuro;
             }
         }
 
@@ -67,6 +69,23 @@ namespace WPFFahrkartenautomat
         #endregion
 
         public void Bezahlen()
+        {
+            double diff;
+            string output;
+            diff = this.Price - input;
+            output = diff.ToString("c", culture);
+
+            if (diff > 0)
+            {
+                this.ToPay = output.Insert(0, "Zu zahlen: \t\t");
+            }
+            else
+            {
+                this.ToPay = output.Insert(0, "Wechselgeld: \t\t");
+            }
+        }
+
+        public void AusgebenWechselgeld()
         {
             throw new System.NotImplementedException();
         }

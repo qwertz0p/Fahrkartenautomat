@@ -17,41 +17,21 @@ namespace WPFFahrkartenautomat
         #region Felder
         private double _price;
         private Areas _area;
-        private string _priceeuro;
-        private string _topay;
         #endregion
         
         #region Properties
+        // Basispreis des Tickets
         public double Price
         {
             get => _price;
             set
             {
                 _price = value;
-                this.PriceEuro = _price.ToString("c", culture);
-                this.ToPay = "Zu zahlen:\t\t" + this.PriceEuro;
+
             }
         }
 
-        public string PriceEuro
-        {
-            get => _priceeuro;
-            set
-            {
-                _priceeuro = value;
-            }
-        }
-
-        public string ToPay
-        {
-            get => _topay;
-            set
-            {
-                _topay = value;
-                OnPropertyChanged(new PropertyChangedEventArgs("ToPay"));
-            }
-        }
-
+        // Berliner Areal
         public Areas Area
         {
             get => _area;
@@ -60,36 +40,25 @@ namespace WPFFahrkartenautomat
                 _area = value;
             }
         }
+
         #endregion
 
+        #region Konstruktoren
+
         public Ticket() { }
+
         public Ticket(Areas ticketarea, double ticketprice)
         {
             this.Area = ticketarea;
             this.Price = ticketprice;
         }
+        #endregion Konstruktoren
 
-        protected void OnPropertyChanged(PropertyChangedEventArgs e)
+        public void Print()
         {
-            if (PropertyChanged != null)
-                PropertyChanged(this, e);
+            throw new System.NotImplementedException();
         }
 
-        public void TicketBezahlen(double input)
-        {
-            double diff;
-            string output;
-            diff = this.Price - input;
-            output = diff.ToString("c", culture);
 
-            if(diff > 0)
-            {
-                this.ToPay = output.Insert(0, "Zu zahlen: \t\t");
-            }
-            else
-            {
-                this.ToPay =  output.Insert(0, "Wechselgeld: \t\t");
-            }
-        }
     }
 }

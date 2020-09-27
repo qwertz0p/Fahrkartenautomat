@@ -55,7 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Areas.cs" />
+    <Compile Include="Areas2Price.cs" />
     <Compile Include="Geldwerte.cs" />
     <Compile Include="Startseite.xaml.cs">
       <DependentUpon>Startseite.xaml</DependentUpon>
