@@ -5,6 +5,7 @@ using System.Text;
 
 namespace WPFFahrkartenautomat
 {
+    //Einteilung der Areale Berlins entsprechend BVG
     public enum Areas
     {
         ABC,

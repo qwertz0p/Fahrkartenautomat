@@ -5,6 +5,7 @@ using System.Text;
 
 namespace WPFFahrkartenautomat
 {
+    // Von Ticketautomat akhzeptierte Geldwerte
     public enum Geldwerte
     {
         Cent10 = 10,

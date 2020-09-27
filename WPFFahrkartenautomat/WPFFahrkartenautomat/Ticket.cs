@@ -11,22 +11,17 @@ using System.Runtime.CompilerServices;
 
 namespace WPFFahrkartenautomat
 {
-    public class Ticket : INotifyPropertyChanged
+    // Class Ticket: Aufnahme von zur Laufzeit unveränderlichen Eigenschaften des ausgewählten Fahrscheins
+    public class Ticket
     {
+        #region Felder
         private double _price;
         private Areas _area;
         private string _priceeuro;
         private string _topay;
-        CultureInfo culture = new CultureInfo("de-DE");
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public Ticket() { }
-        public Ticket(Areas ticketarea, double ticketprice)
-        {
-            this.Area = ticketarea;
-            this.Price = ticketprice;
-        }
-
+        #endregion
+        
+        #region Properties
         public double Price
         {
             get => _price;
@@ -64,6 +59,14 @@ namespace WPFFahrkartenautomat
             {
                 _area = value;
             }
+        }
+        #endregion
+
+        public Ticket() { }
+        public Ticket(Areas ticketarea, double ticketprice)
+        {
+            this.Area = ticketarea;
+            this.Price = ticketprice;
         }
 
         protected void OnPropertyChanged(PropertyChangedEventArgs e)
