@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Globalization;
 using System.ComponentModel;
+using System.Diagnostics;
 
 namespace WPFFahrkartenautomat
 {
@@ -60,6 +61,8 @@ namespace WPFFahrkartenautomat
             {
                 _moneyin += value;
                 OnPropertyChanged(new PropertyChangedEventArgs("Moneyin"));
+
+                this.EinwerfenMünze(value);
 
                 // Autoaktualisierung Priceshow
                 this.AktualisierenPreis();
@@ -178,36 +181,36 @@ namespace WPFFahrkartenautomat
                     _insertcoins[1][i] += 1;
                 }
             }
+            OnPropertyChanged(new PropertyChangedEventArgs("Insertcoins"));
         }
         public void AusgebenWechselgeld()
         {
-
-            for (int i = Enum.GetNames(typeof(Geldwerte)).Length - 1; i >= 0; i--)
+            _topayint = Math.Abs(_topayint)*100;
+            for (int i = _outputcoins[0].Length-1; i >= 0; i--)
             {
-                double temp = (double)(_topayint * 100) / _outputcoins[0][i];
-                if(temp > 0)
+                double temp = _topayint/_outputcoins[0][i];
+                Debug.WriteLine(_outputcoins[0][i]);
+                Debug.WriteLine(temp);
+                if(Math.Abs(temp) > 0)
                 {
                     _outputcoins[1][i] = (int)Math.Truncate(temp);
-                    _topayint -= Math.Truncate(temp) * _outputcoins[0][i];
+                    Debug.WriteLine(Math.Truncate(temp));
+                    _topayint -= (Math.Truncate(temp) * (_outputcoins[0][i]));
                 }
             }
+
+            OnPropertyChanged(new PropertyChangedEventArgs("Outputcoins"));
         }
         #endregion
 
         public int[][] Insertcoins
         {
-            get => default;
-            set
-            {
-            }
+            get => _insertcoins;
         }
 
         public int[][] Outputcoins
         {
-            get => default;
-            set
-            {
-            }
+            get => _outputcoins;
         }
     }
 }

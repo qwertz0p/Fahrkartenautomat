@@ -23,6 +23,7 @@ namespace WPFFahrkartenautomat
     public partial class Ticketkauf : Page
     {
         public Verkauf Actual = new Verkauf();
+        ThicknessConverter thkcon = new ThicknessConverter();
 
 
         public Ticketkauf()
@@ -48,6 +49,18 @@ namespace WPFFahrkartenautomat
             Button btn = (Button)sender;
             string euroin = btn.Name;
             Actual.Moneyin = (int)Enum.Parse(typeof(Geldwerte),euroin);
+
+            if (Actual.Fullypaid)
+            {
+                Cancel.Visibility = Visibility.Collapsed;
+                Mehr.Visibility = Visibility.Collapsed;
+                Weniger.Visibility = Visibility.Collapsed;
+                Thickness th0 = (Thickness)thkcon.ConvertFromString("0");
+                Brd_Cancel.BorderThickness = th0;
+                Brd_Mehr.BorderThickness = th0;
+                Brd_Weniger.BorderThickness = th0;
+                Ausgabe.Visibility = Visibility.Visible;
+            }
         }
 
         #endregion
@@ -69,14 +82,12 @@ namespace WPFFahrkartenautomat
 
             if(Actual.Amount > 1)
             {
-                ThicknessConverter thkcon = new ThicknessConverter();
                 Thickness th1 = (Thickness)thkcon.ConvertFromString("1");
                 Weniger.Visibility = Visibility.Visible;
                 Brd_Weniger.BorderThickness = th1;
             }
             else
             {
-                ThicknessConverter thkcon = new ThicknessConverter();
                 Thickness th0= (Thickness)thkcon.ConvertFromString("0");
                 Weniger.Visibility = Visibility.Collapsed;
                 Brd_Weniger.BorderThickness = th0;

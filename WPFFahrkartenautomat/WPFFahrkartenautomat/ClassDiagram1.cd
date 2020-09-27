@@ -10,7 +10,7 @@
   <Class Name="WPFFahrkartenautomat.Verkauf">
     <Position X="4.5" Y="0.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAABAAAAgAACABCAAABAACQgAAAIAAAAIBCgAAAAAA=</HashCode>
+      <HashCode>CAEABgAAAgAACABCIAMFAACQggQAMAAAAIBCgAAEAAA=</HashCode>
       <FileName>Verkauf.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
