@@ -88,7 +88,7 @@
                     </Button>
                 </Grid>
             </Border>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="73,62,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path=Topay, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" FontFamily="Franklin Gothic Medium" FontSize="18" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Width="291"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="73,62,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path=Topay, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" FontFamily="Franklin Gothic Medium" FontSize="18" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Width="291"/>
         </Grid>
 
     </Grid>

@@ -47,8 +47,8 @@ namespace WPFFahrkartenautomat
                 OnPropertyChanged(new PropertyChangedEventArgs("Moneyin"));
 
                 // Auto: Aktualisierung des noch zu zahlenden Betrags
-                double temp = ((this.Amount * this.Ticket.Price) - _moneyin) / 100;
-                this.Topay = temp.ToString("c", culture);
+                double temp = (double)((Amount * Ticket.Price) - _moneyin) / 100;
+                Topay = temp.ToString("c", culture);
             }
         }
 
@@ -95,8 +95,9 @@ namespace WPFFahrkartenautomat
             {
                 _ticket = value;
 
-                // Auto: es wird ein Ticket ausgewählt
+                // Auto: Initialisierung nur einmal zu Beginn; es wird ein Ticket ausgewählt
                 this.Amount = 1;
+                _moneyin = 0;
                 this.Moneyin = 0;
             }
         }
