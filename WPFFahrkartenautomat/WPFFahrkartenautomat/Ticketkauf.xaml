@@ -33,13 +33,26 @@
             </Grid.ColumnDefinitions>
             <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,0,0" Grid.ColumnSpan="2" CornerRadius="8" Background="White">
                 <Grid>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="68,21,0,0" TextWrapping="Wrap" Text="Ausgewählter Tarif:" FontFamily="Franklin Gothic Medium"  FontSize="18" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Width="190"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="68,78,0,0" TextWrapping="Wrap" Text="Berlin Tarifgebiet: " FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Top" Width="152"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="375,78,0,0" TextWrapping="Wrap" Text="Einzelfahrschein" FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}"  VerticalAlignment="Top" Width="159"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="225,78,0,0" TextWrapping="Wrap" Text="{Binding Path=Ticket.Area, Mode=OneWay}" FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Top" Width="120" />
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="68,168,0,0" TextWrapping="Wrap" Text="Preis:"  FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Top" Width="120" />
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="375,168,0,0" TextWrapping="Wrap" Text="{Binding Path=Priceshow}" FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Top" Width="120" />
-
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="4*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="0" TextWrapping="Wrap" Text="Ausgewählter Tarif:" FontFamily="Franklin Gothic Medium"  FontSize="18" BorderBrush="{x:Null}" Background="{x:Null}" Width="190" VerticalAlignment="Center" Grid.Column="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="0" TextWrapping="Wrap" Text="Berlin Tarifgebiet: " FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Center" Width="152" Grid.Row="1" Grid.Column="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="0" TextWrapping="Wrap" Text="{Binding Path=Ticket.Area, Mode=OneWay}" FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Center" Width="120" Grid.Row="1" Grid.Column="2" />
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="0" TextWrapping="Wrap" Text="Einzelfahrschein" FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}"  VerticalAlignment="Center" Width="159" Grid.Row="1" Grid.Column="3"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="0" TextWrapping="Wrap" Text="Menge:"  FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Center" Width="120" Grid.Row="2" Grid.Column="1" />
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="0,14" TextWrapping="Wrap" Text="{Binding Amount, Mode=OneWay}" FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Center" Width="120" Grid.Row="2" Grid.Column="2" />
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="0" TextWrapping="Wrap" Text="Preis:"  FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Center" Width="120" Grid.Row="3" Grid.Column="1" />
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="0" TextWrapping="Wrap" Text="{Binding Path=Priceshow}" FontFamily="Franklin Gothic Book" FontSize="18" BorderBrush="{x:Null}" VerticalAlignment="Center" Width="120" Grid.Row="3" Grid.Column="2" />
                 </Grid>
             </Border>
             <Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Margin="0" Grid.Column="1" Grid.Row="1" Background="#FFFF5D5D" BorderBrush="Black" BorderThickness="1" CornerRadius="8" ScrollViewer.CanContentScroll="True" >
