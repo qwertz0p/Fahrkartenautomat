@@ -10,16 +10,19 @@
 - [ ] Auswahl der Berlin Einzeltickets
 - [ ] Kauf mehrerer Fahrscheine
 
-
+## MyTasks - Löschen wenn fertig!!!
 - Wenn genug Geld eingeworfen wird Ticketkauf beendet
 - Wechselgeld in Euro-Währungseinheiten umrechnen
 - Wechselgeld Ausgabe
 - Ticket Ausgabe
 - Mehrere Tickets kaufen können
 
+## Benutzerhandbuch:
+
 ## Übersicht Aufbau:
 
-### Ticket Klasse:
+### Klassen:
+#### Ticket:
 Beinhaltet alle Eigenschaften, die ein Ticket haben kann
 
 1. Felder/Properties:
@@ -28,14 +31,14 @@ Beinhaltet alle Eigenschaften, die ein Ticket haben kann
 2. Methoden:
    - ***Print()***: Definition des Drucklayouts für Ausgabe an Kunden
 
-### Verkauf Klasse:
+#### Verkauf:
 Beinhaltet alle Eigenschaften, die ein Verkaufsvorgang haben kann
 
 1. Felder/Properties:
    - ***Amount***: Menge der Tickets (es können nur mehrere *gleiche* Tickets in einem Verkaufsvorgang gekauft werden)
    - ***Ticket***: der Ticket-Typ, den der Kunde ausgewählt hat (Preisberechnung erfolgt auf Grundlage des Basispreises)
    - ***Moneyin***:  Geld, dass der Kunde schon in den Automaten geworfen hat, um zu bezahlen
-   - ***InsertCoins: Münzen, die der Kunde eingeworfen hat (falls Verkauf abgebrochen wird)
+   - ***InsertCoins***: Münzen, die der Kunde eingeworfen hat (falls Verkauf abgebrochen wird)
    - ***Priceshow***: Anzeige des Preises der ausgewählten Tickets in Euro
    - ***ToPay***: Anzeige des Differenzwertes zwischen Preis und Geldeinwurf, der vom Kunden noch zu bezahlen ist
 2. Methoden:
