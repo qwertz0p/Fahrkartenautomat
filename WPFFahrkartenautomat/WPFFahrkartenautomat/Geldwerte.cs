@@ -8,13 +8,13 @@ namespace WPFFahrkartenautomat
     // Von Ticketautomat akhzeptierte Geldwerte (in Cent)
     public enum Geldwerte
     {
-        Cent10 = 10,
-        Cent20 = 20,
-        Cent50 = 50,
-        Euro1 = 100,
-        Euro2 = 200,
-        Euro5 = 500,
+        Euro20 = 2000,
         Euro10 = 1000,
-        Euro20 = 2000
+        Euro5 = 500,
+        Euro2 = 200,
+        Euro1 = 100,
+        Cent50 = 50,
+        Cent20 = 20,
+        Cent10 = 10,
     }
 }

@@ -28,10 +28,25 @@ namespace WPFFahrkartenautomat
         #region Felder
         private int _moneyin;
         private string _topay;
+        private double _topayint;
         private string _priceshow;
         private int _amount;
         private Ticket _ticket;
         private bool _fullypaid;
+
+
+        private int[][] _insertcoins =
+        {
+            Enum.GetValues(typeof(Geldwerte)).Cast<Geldwerte>().Select(e => (int)e).ToArray(),
+            new int[Enum.GetNames(typeof(Geldwerte)).Length]
+        };
+
+        private int[][] _outputcoins =
+{
+            Enum.GetValues(typeof(Geldwerte)).Cast<Geldwerte>().Select(e => (int)e).ToArray(),
+            new int[Enum.GetNames(typeof(Geldwerte)).Length]
+        };
+
         #endregion
 
 
@@ -46,8 +61,11 @@ namespace WPFFahrkartenautomat
                 _moneyin += value;
                 OnPropertyChanged(new PropertyChangedEventArgs("Moneyin"));
 
-                // Autoaktualisierung von Topay und Priceshow
-                this.AktualisierenWerte();
+                // Autoaktualisierung Priceshow
+                this.AktualisierenPreis();
+
+                // Autoaktualisierung Topay = Bezahlen
+                Fullypaid = this.Bezahlen();
     
             }
         }
@@ -83,7 +101,10 @@ namespace WPFFahrkartenautomat
                 OnPropertyChanged(new PropertyChangedEventArgs("Amount"));
 
                 // Autoaktualisierung von Topay und Priceshow
-                this.AktualisierenWerte();
+                this.AktualisierenPreis();
+
+                // Autoaktualisierung von Topay
+                Fullypaid = this.Bezahlen();
             }
         }
 
@@ -106,9 +127,12 @@ namespace WPFFahrkartenautomat
             get => _fullypaid;
             set
             {
+                // Wird bei Mengenveränderung (Amount set) oder Geldeinwurf (Moneyin set) ermittelt
                 _fullypaid = value;
+                OnPropertyChanged(new PropertyChangedEventArgs("Fullypaid"));
             }
         }
+
         #endregion
 
 
@@ -120,35 +144,70 @@ namespace WPFFahrkartenautomat
 
 
         #region Methoden
-        public void Bezahlen()
-        {
-
-        }
-
-        public void AktualisierenWerte()
+        public bool Bezahlen()
         {
             // Aktualisierung: Noch zu Bezahlen
-            double tempTopay = (double)((Amount * Ticket.Price) - Moneyin) / 100;
-            if (tempTopay > 0)
+            _topayint = (double)((Amount * Ticket.Price) - Moneyin) / 100;
+            if (_topayint > 0)
             {
-                Topay = notpaid + tempTopay.ToString("c", culture);
+                Topay = notpaid + _topayint.ToString("c", culture);
+                return false;
             }
             else
             {
-                Topay = paid + tempTopay.ToString("c", culture);
-            }
+                Topay = paid + _topayint.ToString("c", culture);
+                this.AusgebenWechselgeld();
+                return true;
 
+            }
+        }
+
+        public void AktualisierenPreis()
+        {
             // Aktualisierung: Des zu zahlenden Gesamtpreises
             double tempPrice = (double)(this.Amount * this.Ticket.Price) / 100;
             this.Priceshow = tempPrice.ToString("c", culture);
-
-
         }
 
+        public void EinwerfenMünze(int wert)
+        {
+            for (int i = 0; i < _insertcoins[0].Length; i++)
+            {
+                if(_insertcoins[0][i] == wert)
+                {
+                    _insertcoins[1][i] += 1;
+                }
+            }
+        }
         public void AusgebenWechselgeld()
         {
-            throw new System.NotImplementedException();
+
+            for (int i = Enum.GetNames(typeof(Geldwerte)).Length - 1; i >= 0; i--)
+            {
+                double temp = (double)(_topayint * 100) / _outputcoins[0][i];
+                if(temp > 0)
+                {
+                    _outputcoins[1][i] = (int)Math.Truncate(temp);
+                    _topayint -= Math.Truncate(temp) * _outputcoins[0][i];
+                }
+            }
         }
         #endregion
+
+        public int[][] Insertcoins
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public int[][] Outputcoins
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

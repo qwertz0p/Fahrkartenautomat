@@ -93,9 +93,12 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Geldeinwurf:" HorizontalAlignment="Left" />
-                    <Button Name="Cent10" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Click="Einwerfen_Click">
-                        <Image Source="{StaticResource Cent10}"/>
-                    </Button>
+                    <DockPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Label Content="{Binding Path=Insertcoins[7], Mode=OneWay}"></Label>
+                        <Button Name="Cent10" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Click="Einwerfen_Click">
+                            <Image Source="{StaticResource Cent10}"/>
+                        </Button>
+                    </DockPanel>
                     <Button Name="Cent20" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Click="Einwerfen_Click">
                         <Image  Source="{StaticResource Cent20}" />
                     </Button>

@@ -73,7 +73,7 @@ namespace WPFFahrkartenautomat {
         #line hidden
         
         
-        #line 96 "..\..\Ticketkauf.xaml"
+        #line 98 "..\..\Ticketkauf.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Cent10;
         
@@ -81,7 +81,7 @@ namespace WPFFahrkartenautomat {
         #line hidden
         
         
-        #line 99 "..\..\Ticketkauf.xaml"
+        #line 102 "..\..\Ticketkauf.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Cent20;
         
@@ -89,7 +89,7 @@ namespace WPFFahrkartenautomat {
         #line hidden
         
         
-        #line 102 "..\..\Ticketkauf.xaml"
+        #line 105 "..\..\Ticketkauf.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Cent50;
         
@@ -97,7 +97,7 @@ namespace WPFFahrkartenautomat {
         #line hidden
         
         
-        #line 105 "..\..\Ticketkauf.xaml"
+        #line 108 "..\..\Ticketkauf.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Euro1;
         
@@ -105,7 +105,7 @@ namespace WPFFahrkartenautomat {
         #line hidden
         
         
-        #line 108 "..\..\Ticketkauf.xaml"
+        #line 111 "..\..\Ticketkauf.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Euro2;
         
@@ -113,7 +113,7 @@ namespace WPFFahrkartenautomat {
         #line hidden
         
         
-        #line 111 "..\..\Ticketkauf.xaml"
+        #line 114 "..\..\Ticketkauf.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Euro5;
         
@@ -121,7 +121,7 @@ namespace WPFFahrkartenautomat {
         #line hidden
         
         
-        #line 114 "..\..\Ticketkauf.xaml"
+        #line 117 "..\..\Ticketkauf.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Euro10;
         
@@ -129,7 +129,7 @@ namespace WPFFahrkartenautomat {
         #line hidden
         
         
-        #line 117 "..\..\Ticketkauf.xaml"
+        #line 120 "..\..\Ticketkauf.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Euro20;
         
@@ -201,7 +201,7 @@ namespace WPFFahrkartenautomat {
             case 6:
             this.Cent10 = ((System.Windows.Controls.Button)(target));
             
-            #line 96 "..\..\Ticketkauf.xaml"
+            #line 98 "..\..\Ticketkauf.xaml"
             this.Cent10.Click += new System.Windows.RoutedEventHandler(this.Einwerfen_Click);
             
             #line default
@@ -210,7 +210,7 @@ namespace WPFFahrkartenautomat {
             case 7:
             this.Cent20 = ((System.Windows.Controls.Button)(target));
             
-            #line 99 "..\..\Ticketkauf.xaml"
+            #line 102 "..\..\Ticketkauf.xaml"
             this.Cent20.Click += new System.Windows.RoutedEventHandler(this.Einwerfen_Click);
             
             #line default
@@ -219,7 +219,7 @@ namespace WPFFahrkartenautomat {
             case 8:
             this.Cent50 = ((System.Windows.Controls.Button)(target));
             
-            #line 102 "..\..\Ticketkauf.xaml"
+            #line 105 "..\..\Ticketkauf.xaml"
             this.Cent50.Click += new System.Windows.RoutedEventHandler(this.Einwerfen_Click);
             
             #line default
@@ -228,7 +228,7 @@ namespace WPFFahrkartenautomat {
             case 9:
             this.Euro1 = ((System.Windows.Controls.Button)(target));
             
-            #line 105 "..\..\Ticketkauf.xaml"
+            #line 108 "..\..\Ticketkauf.xaml"
             this.Euro1.Click += new System.Windows.RoutedEventHandler(this.Einwerfen_Click);
             
             #line default
@@ -237,7 +237,7 @@ namespace WPFFahrkartenautomat {
             case 10:
             this.Euro2 = ((System.Windows.Controls.Button)(target));
             
-            #line 108 "..\..\Ticketkauf.xaml"
+            #line 111 "..\..\Ticketkauf.xaml"
             this.Euro2.Click += new System.Windows.RoutedEventHandler(this.Einwerfen_Click);
             
             #line default
@@ -246,7 +246,7 @@ namespace WPFFahrkartenautomat {
             case 11:
             this.Euro5 = ((System.Windows.Controls.Button)(target));
             
-            #line 111 "..\..\Ticketkauf.xaml"
+            #line 114 "..\..\Ticketkauf.xaml"
             this.Euro5.Click += new System.Windows.RoutedEventHandler(this.Einwerfen_Click);
             
             #line default
@@ -255,7 +255,7 @@ namespace WPFFahrkartenautomat {
             case 12:
             this.Euro10 = ((System.Windows.Controls.Button)(target));
             
-            #line 114 "..\..\Ticketkauf.xaml"
+            #line 117 "..\..\Ticketkauf.xaml"
             this.Euro10.Click += new System.Windows.RoutedEventHandler(this.Einwerfen_Click);
             
             #line default
@@ -264,7 +264,7 @@ namespace WPFFahrkartenautomat {
             case 13:
             this.Euro20 = ((System.Windows.Controls.Button)(target));
             
-            #line 117 "..\..\Ticketkauf.xaml"
+            #line 120 "..\..\Ticketkauf.xaml"
             this.Euro20.Click += new System.Windows.RoutedEventHandler(this.Einwerfen_Click);
             
             #line default
