@@ -201,6 +201,12 @@ namespace WPFFahrkartenautomat
 
             OnPropertyChanged(new PropertyChangedEventArgs("Outputcoins"));
         }
+
+        public void AbbrechenVorgang()
+        {
+            _outputcoins[1] = _insertcoins[1];
+            OnPropertyChanged(new PropertyChangedEventArgs("Outputcoins"));
+        }
         #endregion
 
         public int[][] Insertcoins

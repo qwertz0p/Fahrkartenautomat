@@ -11,14 +11,8 @@
 - [x] Kauf mehrerer Fahrscheine
 
 ## MyTasks - Löschen wenn fertig!!!
-- Wenn genug Geld eingeworfen wird Ticketkauf beendet
-- Wechselgeld in Euro-Währungseinheiten umrechnen
-- Wechselgeld Ausgabe
 - Ticket Ausgabe
-- FensterIcon anpassen
-- Button Template
-- Inserted Coins implementieren
-- Nach Finish dump löschen
+- Cancel implementieren
 
 ## Benutzerhandbuch:
 

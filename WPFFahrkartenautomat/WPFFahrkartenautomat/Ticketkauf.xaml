@@ -77,7 +77,7 @@
                 </Border>
             </Grid>
             
-            <Border Margin="0" Grid.Row="2" VerticalAlignment="Center" Grid.ColumnSpan="2" BorderThickness="1" CornerRadius="8" UseLayoutRounding="True" BorderBrush="Black" Background="White">
+            <Border x:Name="Brd_Einwurf" Margin="0" Grid.Row="2" VerticalAlignment="Center" Grid.ColumnSpan="2" BorderThickness="1" CornerRadius="8" UseLayoutRounding="True" BorderBrush="Black" Background="White">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
@@ -229,6 +229,15 @@
                             <Image  Source="{StaticResource Euro20}"/>
                         </Button>
                     </DockPanel>
+
+                    <Border x:Name="Brd_Fertig" Visibility="Collapsed" Grid.Row="1"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Margin="0" Background="#FFFF5D5D" BorderBrush="Black" BorderThickness="1" CornerRadius="8" ScrollViewer.CanContentScroll="True" Grid.Column="8" >
+                        <Button x:Name="Fertig" Content="Fertig" Click="Fertig_Button_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="14"/>
+                    </Border>
+
+                    <Border x:Name="Brd_Ticket" Visibility="Collapsed" Grid.Row="1"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Margin="0" Background="#FFFF5D5D" BorderBrush="Black" BorderThickness="1" CornerRadius="8" ScrollViewer.CanContentScroll="True" Grid.Column="8" >
+                        <Button x:Name="Ticket" Content="Ticket" Click="Ticket_Button_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="14"/>
+                    </Border>
+
                 </Grid>
             </Border>
         </Grid>

@@ -39,9 +39,18 @@ namespace WPFFahrkartenautomat
 
         private void Cancel_Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Startseite());
+            Actual.AbbrechenVorgang();
+            Ausgabe.Visibility = Visibility.Visible;
+            Brd_Fertig.Visibility = Visibility.Visible;
+            Brd_Einwurf.Visibility = Visibility.Collapsed;
+            
         }
 
+        private void Fertig_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Actual.AbbrechenVorgang();
+            this.NavigationService.Navigate(new Startseite());
+        }
 
         #region Geldeinwurf
         private void Einwerfen_Click(object sender, RoutedEventArgs e)
@@ -52,6 +61,7 @@ namespace WPFFahrkartenautomat
 
             if (Actual.Fullypaid)
             {
+                Brd_Einwurf.Visibility = Visibility.Collapsed;
                 Cancel.Visibility = Visibility.Collapsed;
                 Mehr.Visibility = Visibility.Collapsed;
                 Weniger.Visibility = Visibility.Collapsed;
@@ -60,7 +70,15 @@ namespace WPFFahrkartenautomat
                 Brd_Mehr.BorderThickness = th0;
                 Brd_Weniger.BorderThickness = th0;
                 Ausgabe.Visibility = Visibility.Visible;
+
+                Brd_Ticket.Visibility = Visibility.Visible;
             }
+        }
+
+        private void Ticket_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Actual.Ticket.Print();
+            this.NavigationService.Navigate(new Startseite());
         }
 
         #endregion

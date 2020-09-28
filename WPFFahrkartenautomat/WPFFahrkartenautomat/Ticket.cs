@@ -8,6 +8,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows;
 
 namespace WPFFahrkartenautomat
 {
@@ -60,7 +61,7 @@ namespace WPFFahrkartenautomat
         #region Methoden
         public void Print()
         {
-            throw new System.NotImplementedException();
+            MessageBox.Show($"Danke, dass Sie ein {this.Area.ToString()} Einzelticket erworben haben.");
         }
         #endregion
 
