@@ -14,7 +14,6 @@
 ## Benutzerhandbuch:
 1. Startseite:
    - Wählen Sie das gewünschte Ticket aus, indem sie im zugehörigen Bereich auf "Einzelticket" klicken.
-   ![Alt Text](Startseite.jpg)
 2. Verkauf:
    - im oberen Bereich wird die von Ihnen zuvor gewählte Konfiguration angezeigt.
    - Durch einen Klick auf "+Ticket" wird ein Ticket (gleicher Konfiguration) zur Verkaufsmenge hinzugefügt.
@@ -22,6 +21,10 @@
    - Um zu bezahlen, wählen sie per Klick die Geldmittel aus dem unteren Feld aus.
    - Nach vollständiger Bezahlung oder Abbruch erscheit das Rückgeld, sowie das Ticket im Ausgabeschacht.
    - Durch Klick auf "Fertig" (bei Abbruch) oder "Ticket" (soll Ticketentnahme nach Kauf simulieren) schließen Sie den Kaufvorgang ab und kehren zum Ausgangsmenü zurück.
+   
+   ![Alt Text](Startseite.jpg)
+   ![Alt Text](Kauf.jpg)
+   ![Alt Text](Kauf_fin.jpg)
 
 ## Übersicht Aufbau:
 
