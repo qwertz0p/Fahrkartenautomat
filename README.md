@@ -24,9 +24,9 @@
    
    ![Alt Text](Startseite.jpg)
    
-   ![Alt Text](Kauf.jpg)
+   ![Alt Text](Kauf.png)
    
-   ![Alt Text](Kauf_fin.jpg)
+   ![Alt Text](Kauf_fin.png)
 
 ## Übersicht Aufbau:
 
