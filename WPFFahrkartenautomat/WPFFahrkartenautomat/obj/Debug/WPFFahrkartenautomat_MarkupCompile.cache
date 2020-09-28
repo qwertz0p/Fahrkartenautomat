@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\
+C:\Users\theresa.pfitzner\Source\Repos\Fahrkartenautomat2\WPFFahrkartenautomat\WPFFahrkartenautomat\obj\Debug\
 WPFFahrkartenautomat
 none
 false
 DEBUG;TRACE
-D:\.NET\Fahrkartenautomat\WPFFahrkartenautomat\WPFFahrkartenautomat\App.xaml
+C:\Users\theresa.pfitzner\Source\Repos\Fahrkartenautomat2\WPFFahrkartenautomat\WPFFahrkartenautomat\App.xaml
 3-1242280077
 2-1685856308
 11-128444710
 13-1505183044
 MainWindow.xaml;Startseite.xaml;Ticketkauf.xaml;
 
-False
+True
 

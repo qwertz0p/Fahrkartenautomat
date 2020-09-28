@@ -73,6 +73,17 @@ namespace WPFFahrkartenautomat
             }
         }
 
+        // Geldmittel im Ein- und Ausgabeschacht
+        public int[][] Insertcoins
+        {
+            get => _insertcoins;
+        }
+
+        public int[][] Outputcoins
+        {
+            get => _outputcoins;
+        }
+
         // Anzeigewert des aktuellen Preises
         public string Priceshow
         {
@@ -209,14 +220,5 @@ namespace WPFFahrkartenautomat
         }
         #endregion
 
-        public int[][] Insertcoins
-        {
-            get => _insertcoins;
-        }
-
-        public int[][] Outputcoins
-        {
-            get => _outputcoins;
-        }
     }
 }
