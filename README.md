@@ -14,7 +14,7 @@
 ## Benutzerhandbuch:
 1. Startseite:
    - Wählen Sie das gewünschte Ticket aus, indem sie im zugehörigen Bereich auf "Einzelticket" klicken.
-   Startseite.jpg
+   ![Alt Text](Startseite.jpg)
 2. Verkauf:
    - im oberen Bereich wird die von Ihnen zuvor gewählte Konfiguration angezeigt.
    - Durch einen Klick auf "+Ticket" wird ein Ticket (gleicher Konfiguration) zur Verkaufsmenge hinzugefügt.
