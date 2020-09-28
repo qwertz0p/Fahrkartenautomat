@@ -23,7 +23,9 @@
    - Durch Klick auf "Fertig" (bei Abbruch) oder "Ticket" (soll Ticketentnahme nach Kauf simulieren) schließen Sie den Kaufvorgang ab und kehren zum Ausgangsmenü zurück.
    
    ![Alt Text](Startseite.jpg)
+   
    ![Alt Text](Kauf.jpg)
+   
    ![Alt Text](Kauf_fin.jpg)
 
 ## Übersicht Aufbau:
